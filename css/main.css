@@ -11,7 +11,7 @@ body {
     display: none;
 }
 
-/*meain header rules*/
+/*main header rules*/
 
 header {
     background-color: red;
@@ -25,8 +25,22 @@ header {
     margin: 0px auto;
 }
 
+#character_nav {
+    background-color: #675050;
+    background-image: url('../images/characters_art_mas_mob_01.jpeg');
+    background-repeat: none;
+    background-blend-mode: hard-light;
+}
+
 .characters {
     list-style-type: none;
+
+    /*week 8 flexbox stuff*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*week 8 flexbox stuff*/
+
     padding: 0;
 }
 
@@ -36,4 +50,66 @@ header {
     background-color: black;
     text-align: left;
     cursor: pointer;
+
+    /*week 8 stuff*/
+    transition: box-shadow 0.2s ease;
+    box-shadow: 0 155px 0 0 rgb(255,0,0) inset;
+}
+.characters li:hover {
+    box-shadow: 0 220px 0 0 rgb(255,0,0) inset;
+}
+
+/*week 8 from here down*/
+.characters li h5 {
+color: #fff;
+padding: 12px 8px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+/*---sprite---*/
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/marvelSprites.jpg');
+}
+/*the ../ tells CSS to jump out of the CSS folder, and the pathway tells it where to go next*/
+
+#carol {
+    background-position: -150px 0;
+}
+
+/*carol is attached to the sprite tag in the index*/
+
+#clint {
+    background-position: -300px 0;
+}
+
+#hulk {
+    background-position: -450px 0;
+}
+
+#thor {
+    background-position: -600 0;
+}
+
+#widow {
+    background-position: -750px 0;
+}
+
+/*the hover rule makes the image change when you hover over it*/
+/*you can string rules together in a line*/
+
+#cap:hover, #carol:hover, #clint:hover, #hulk:hover, #thor:hover, #widow:hover {
+    background-position-y: -150px;
+}
+
+/*---footer rules--*/
+footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center
 }
