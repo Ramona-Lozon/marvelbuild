@@ -59,15 +59,33 @@ header {
     box-shadow: 0 220px 0 0 rgb(255,0,0) inset;
 }
 
-/*week 8 from here down*/
 .characters li h5 {
-color: #fff;
-padding: 12px 8px;
+    color: #fff;
+    padding: 12px 8px;
+    }
+    
+    .characters li a {
+        text-decoration: none;
+    }
+article, #instructions {
+    padding: 20px;
 }
 
-.characters li a {
-    text-decoration: none;
+article h3, #instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
 }
+
+article p, #instructions p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
 
 /*---sprite---*/
 
